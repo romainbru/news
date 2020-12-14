@@ -5,9 +5,10 @@
 <title>Voici les 10 dernières news!</title>
 </head>
 <body>
-	<header><h1> Gestion de news <BR/>
-	avec codeIgniter </h1>
-	</header>
+<?php
+$this->load->view('v_entete');
+$this->load->view('v_bandeau');
+?>
 	<h1>Les news!</h1>
 	<div id="liste">
 		<table>
@@ -31,5 +32,8 @@
 			<?php endforeach;?>
 	</table>
 	</div>
+<?php
+$this->load->view('v_piedPage');
+?>
 </body>
 </html>
